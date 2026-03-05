@@ -32,6 +32,6 @@ jobs:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
         run: |
           uv run datasette publish fly blog.db \
-            --app your-app-name \
+            --app edeo-my-blog \
             --template-dir templates/ \
             --install datasette-template-sql
